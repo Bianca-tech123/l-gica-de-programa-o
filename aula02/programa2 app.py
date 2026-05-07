@@ -1,0 +1,9 @@
+# NOTE: Programa Impar ou Par
+num = int(input("Digite um número: "))
+
+# estrutura de decisão
+if num % 2 == 0:
+    print("O número é par!")
+
+else:
+    print("O número e impar!")
