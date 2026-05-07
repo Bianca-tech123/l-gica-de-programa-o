@@ -1,0 +1,5 @@
+#20- Solicite um numero e exiba o valor absoluto dele (sem considerar o sinal)
+num = input("Digite um numero: ")
+num = float(num)
+abso = abs(num)
+print("O valor absoluto é: ",(abso))

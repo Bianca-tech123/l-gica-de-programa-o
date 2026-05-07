@@ -1,0 +1,25 @@
+'''
+  Programa 01 - aula04 - 28/04
+  Prof: Karython Gomes
+
+  Sistemas de sorteios 1.0
+'''
+import os
+import random
+lista_nomes = ['Arthur Cintra', 'Pietro','Davi','Jose','Jhonny','Bianca','Vitor','Pedro','Nayara','Gustavo','Matheus','Felipe','Erick','Gabriel','Lucas','Victor','Rodrigo','Miguel','Maria','Augusto']
+lista_sorteados = []
+sorteados = 0
+while sorteados < 5:
+    nome_sorteado = random.choice(lista_nomes)
+    print(f'Sorteado: {nome_sorteado}')
+    lista_sorteados.append(nome_sorteado)
+
+    print(f'Lista antes de remover {len(lista_nomes)}')
+
+    lista_nomes.remove(nome_sorteado)
+    
+    print(f'Lista atualizada {len(lista_nomes)}')
+
+    sorteados += 1
+
+print ('Fim do programa!')
